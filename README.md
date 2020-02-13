@@ -13,22 +13,22 @@ There are two Jupyter notebooks:
 
     1. Feature engineering: As shown in the diagram, the *Customer Transaction Data* does not have its own identification numbers as a column. So, it cannot be merged with the train data without some modification and by aggregations by the features shared with other tables, more information can be found. `pandas.pivot_table` and `pandas.merge` were repeatedly used for this process. 
     2. Resampling process for the class imbalance problem: The ratio of the positive class to the negative class in the `redemption status` was 0.0094 to 1. Therefore the SMOTE (Synthetic Minority Oversampling Technique) resampling method was implemented on the train data after the original train data split into the train and the test data. With varied ratios of two classes, ROC curves were plotted using the test data prediction by the logistic regression model and the least addition of synthetic positive class data with the best fit picked which was the ratio of 0.33 to 1.
-<img src='images/SMOTE.png' width="600">    
+<img src='images/SMOTE.PNG' width="500">
 
 * __Modeling_Evaluation_Analysis__ contains processes of building three models using logistic regression, random forest, gradient boosting methods and analyzing results from models. 
 
     1. The algorithms for building models were chosen as their distinct ways for models to be trained and all three provides feature importances for analyzing results. 
     2. The models were tuned based on the recall scores as the most important thing for modeling for this project is to detect as much positive classes as possible. 
     3. The optimally tuned model evaluation results for the three models are following. For our purpose, the logistic regression model would be the best as has the highest recall scores. However, the random forest model seems well balanced between other evaluation scores such as the accuracy being over 90% and a high F1 score. All three model do not seem to be overfitted by comparing the accuracy scores between predictions between the train and the test data. 
-<img src='images/train_results.png' width="500">
-<img src='images/test_result.png' width="500">   
-<img src='images/evaluation_plots.png' width="500">
-<img src='images/CFs.png' width="800">
+<img src='images/train_results.PNG' width="500">
+<img src='images/test_result.PNG' width="500">   
+<img src='images/evaluation_plots.PNG' width="500">
+<img src='images/CFs.PNG' width="800">
 
     4. The feature importances calculated by three models are helpful to investigate what factors influence customers use or not to use a coupon. 
-<img src='images/LogRegFt.png' width="500">
-<img src='images/RandForest_ft.png' width="500">
-<img src='images/GradBoost_ft.png' width="500">
+<img src='images/LogRegFt.PNG' width="500">
+<img src='images/RandForest_ft.PNG' width="500">
+<img src='images/GradBoost_ft.PNG' width="500">
 
 
     
