@@ -22,12 +22,13 @@ There are two Jupyter notebooks:
     1. The algorithms for building models were chosen as their distinct ways for models to be trained and all three provides feature importances for analyzing results. 
     2. The models were tuned based on the recall scores as the most important thing for modeling for this project is to detect as much positive classes as possible. 
     3. The optimally tuned model evaluation results for the three models are following. For our purpose, the logistic regression model would be the best as has the highest recall scores. However, the random forest model seems well balanced between other evaluation scores such as the accuracy being over 90% and a high F1 score. All three model do not seem to be overfitted by comparing the accuracy scores between predictions between the train and the test data. 
+    4. The feature importances calculated by three models are helpful to investigate what factors influence customers use or not to use a coupon.
     
 <img src='images/train_results.PNG' width="500">
 <img src='images/test_result.PNG' width="500">   
 <img src='images/evaluation_plots.PNG' width="500">
 <img src='images/CFs.png' width="800">
-    4. The feature importances calculated by three models are helpful to investigate what factors influence customers use or not to use a coupon.
+
        
 <img src='images/LogRegFt.PNG' width="500">
 <img src='images/RandForest_ft.PNG' width="500">
