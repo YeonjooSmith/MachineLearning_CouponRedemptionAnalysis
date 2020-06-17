@@ -36,7 +36,7 @@ There are two Jupyter notebooks:
 
 
     
-#### For in depth explanation about the project in less technical perspective and suggestions from the result please refer to [the blog article](link)
+#### For in depth explanation about the project in less technical perspective and suggestions from the result please refer to [the blog article](https://towardsdatascience.com/are-you-using-enough-coupons-d18c2d18dd5f)
 
 # How to use the codes
 ### List of libraries to be imported
